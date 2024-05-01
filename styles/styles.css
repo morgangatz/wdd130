@@ -12,7 +12,7 @@ nav a {
 h1 {
     color: steelblue;
 }
-img {
+main img {
     width: 150px;
     height: auto;
     border: 2px solid steelblue;
@@ -38,7 +38,7 @@ aside {
     text-align: center;
 }
 
-main img {
+aside img {
     width: 150px;
     height: auto;
 }
