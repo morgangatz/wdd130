@@ -22,19 +22,52 @@ body {
     --nav-hover-background-color: #FCE172;
 }
 
+.hero{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
+.hero h1 {
+    position: absolute;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+	top: 15px;
+	background: #ffffff;
+	padding: 0.5rem;
+	opacity: 0.8;
+}
+
+.hero article {
+    position: absolute;
+    background: #ffffff;
+    margin-left: 20px;
+    padding: 0.5rem;
+    opacity: 0.8;
+    top: 120px;
+    left: 30px;
+    right: 30px;
+}
+
+.hero article p {
+    margin-top: -1px;
+}
+
 .hero article img {
-    display: float;
+    float: right;
+    width: 35%;
 }
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color)
+    color: var(--accent2-color)
 }
 
 nav {
@@ -50,15 +83,7 @@ nav a {
     padding: 1rem;
 }
 
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
-}
-
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
-}
-
-footer img {
-    max-height: 70px;
 }
