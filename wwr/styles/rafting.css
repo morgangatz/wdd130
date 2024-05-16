@@ -9,7 +9,7 @@ body {
 
 :root {
     --primary-color: #000000;
-    --secondary-color: #004040;
+    --secondary-color: #088283;
     --accent1-color: #7DC8DA;
     --accent2-color: #0C347A;
 
@@ -22,7 +22,38 @@ body {
     --nav-hover-background-color: #FCE172;
 }
 
-.hero{
+.history {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    display: grid;
+	grid-template-columns: 1fr 250px 1fr;
+    background-color: var(--secondary-color);
+    padding-top: 40px;
+    margin-top: 20px;
+    height: auto;
+}
+
+.history p {
+    margin: 20px;
+}
+
+.history h2 {
+    position: absolute;
+    top: 0;
+    left: 22px;
+    right: 0;
+    text-align: center;
+}
+
+.history img {
+    display: block;
+    width: 100%;
+    margin: 10px;
+}
+
+.hero {
     position: relative;
     display: flex;
     align-items: center;
@@ -70,10 +101,27 @@ h1, h2 {
     color: var(--accent2-color)
 }
 
+header {
+    background-color: var(--secondary-color);
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+}
+
+header img {
+	width: 125px;
+	height: auto;
+}
+
+
 nav {
     /*background-color: var(--nav-background-color);*/
-    font-size: 1.1rem;
     display: flex;
+    text-align: right;
+    font-size: 1.3rem;
 }
 
 nav a {
@@ -86,4 +134,51 @@ nav a {
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 5px;
+    
+}
+
+.adventure h2 {
+    text-align: center;
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+}
+
+.adventure figure {
+    margin: 0;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.adventure img {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    object-fit:cover
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+footer p{
+    flex: 1;
+    position: relative;
+    text-align: center;
+    justify-content: space-between;       
+}
+
+.sociallinks {
+    display: flex;
+    position: relative;
+    justify-content: right;
 }
