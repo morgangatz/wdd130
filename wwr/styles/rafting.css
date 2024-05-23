@@ -170,10 +170,6 @@ footer {
 
 }
 
-footer img {
-    height: 69px;
-}
-
 footer p{
     flex: 1;
     position: relative;
