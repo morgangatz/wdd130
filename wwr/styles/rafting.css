@@ -239,7 +239,6 @@ footer p{
 }
 
 form {
-    margin: center;
     padding: 20px;
     background-color: var(--accent1-color);
     display: flex;
