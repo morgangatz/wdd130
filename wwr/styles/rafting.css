@@ -140,7 +140,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(5, auto);
     gap: 5px;
-    
+    justify-content: center;
 }
 
 .adventure h2 {
@@ -181,4 +181,112 @@ footer p{
     display: flex;
     position: relative;
     justify-content: right;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    background: var(--accent1-color);
+    height: 300px;
+}
+  
+.text {
+   flex: 1;
+   padding-left: 15px;
+}
+  
+.map {
+    flex: 1;
+    width: 100%;
+    position: relative;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+.employee {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 5px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.employee h2 {
+    text-align: center;
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+}
+
+.employee figure {
+    margin: 0;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.employee img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    object-fit:cover
+}
+
+form {
+    margin: center;
+    padding: 20px;
+    background-color: var(--accent1-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.form-item {
+    display: flex;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.message, .type {
+    margin: 5px;
+    align-self: center;
+}
+
+.message textarea {
+    width: 100%;
+    display: flex;
+}
+
+button {
+    margin: 20px;
+    padding: 10px;
+    width: 20%; 
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    align-self: center;
+}
+
+input[type="text"], input[type="email"], textarea {
+    background-color: #ffffff;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: var(--accent2-color);
+    
 }
