@@ -9,7 +9,7 @@ body {
 
 :root {
     --primary-color: #000000;
-    --secondary-color: #088283;
+    --secondary-color: #01c2c262;
     --accent1-color: #7DC8DA;
     --accent2-color: #0C347A;
 
@@ -17,7 +17,7 @@ body {
     --paragraph-font: 'var(--paragraph-font)', serif;
 
     --nav-background-color: #000000;
-    --nav-link-color: #7DC8DA;
+    --nav-link-color: #000000;
     --nav-hover-link-color: #0C347A;
     --nav-hover-background-color: #FCE172;
 }
@@ -288,4 +288,51 @@ button:hover {
     color: #ffffff;
     background-color: var(--accent2-color);
     
+}
+
+.trip {
+    display: grid;
+    background-color: var(--secondary-color);
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.trip  p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.trip figure {
+    margin: 0;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    font-size: 14px;
+}
+
+.trip img {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    object-fit:cover
+}
+
+.trip button {
+    width: 80%;
+    align-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #bcbcbc;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #dddddd;
 }
